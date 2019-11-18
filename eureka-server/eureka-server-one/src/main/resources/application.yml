@@ -1,0 +1,23 @@
+server:
+  port: 9091
+
+#security安全验证配置
+spring:
+  application:
+    name: eureka-server-one
+  security:
+    basic: true
+    user:
+      name: security
+      password: security
+
+#eureka集群配置
+eureka:
+  instance:                       #开启ip注册
+    prefer-ip-address: true
+    ip-address: 10.2.0.236
+  client:                           #开启eureka集群模式
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://security:security@10.2.0.236:9092/eureka
