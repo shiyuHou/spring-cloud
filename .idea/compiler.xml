@@ -8,22 +8,29 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-server-one" />
         <module name="eureka-server-two" />
+        <module name="cloud-user" />
+        <module name="orm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="app" target="1.8" />
       <module name="cloud" target="1.8" />
+      <module name="cloud-user" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="eureka-server-one" target="1.8" />
       <module name="eureka-server-two" target="1.8" />
+      <module name="orm" target="1.8" />
       <module name="spring-cloud" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="cloud" options="-parameters" />
+      <module name="cloud-user" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="eureka-server-one" options="-parameters" />
       <module name="eureka-server-two" options="-parameters" />
+      <module name="orm" options="-parameters" />
       <module name="spring-cloud" options="-parameters" />
     </option>
   </component>

@@ -1,0 +1,18 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: cloud-user
+
+#eureka配置
+eureka:
+  node1: http://security:security@localhost:9091/eureka
+  node2: http://security:security@localhost:9092/eureka
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: ${eureka.node1},${eureka.node2}

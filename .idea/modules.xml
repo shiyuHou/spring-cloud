@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server/cloud.iml" filepath="$PROJECT_DIR$/eureka-server/cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/cloud-user/cloud-user.iml" filepath="$PROJECT_DIR$/app/cloud-user/cloud-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server-one/eureka-server-one.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server-one/eureka-server-one.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server-two/eureka-server-two.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server-two/eureka-server-two.iml" />
+      <module fileurl="file://$PROJECT_DIR$/orm/orm.iml" filepath="$PROJECT_DIR$/orm/orm.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud.iml" filepath="$PROJECT_DIR$/spring-cloud.iml" />
     </modules>
   </component>

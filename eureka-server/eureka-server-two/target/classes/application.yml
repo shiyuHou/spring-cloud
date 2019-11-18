@@ -15,9 +15,9 @@ spring:
 eureka:
   instance:                       #开启ip注册
     prefer-ip-address: true
-    ip-address: 10.2.0.236
+    ip-address: localhost
   client:                           #开启eureka集群模式
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://security:security@10.2.0.236:9091/eureka
+      defaultZone: http://security:security@localhost:9091/eureka
