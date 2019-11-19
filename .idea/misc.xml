@@ -8,7 +8,17 @@
         <option value="$PROJECT_DIR$/eureka-server/eureka-server-one/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-server/eureka-server-two/pom.xml" />
         <option value="$PROJECT_DIR$/app/cloud-user/pom.xml" />
+        <option value="$PROJECT_DIR$/common/pom.xml" />
+        <option value="$PROJECT_DIR$/expand/pom.xml" />
+        <option value="$PROJECT_DIR$/expand/openfeign/pom.xml" />
+        <option value="$PROJECT_DIR$/orm/pom.xml" />
+        <option value="$PROJECT_DIR$/service/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/orm/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">

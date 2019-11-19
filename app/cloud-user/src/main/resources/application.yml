@@ -1,5 +1,7 @@
 server:
   port: 8081
+  servlet:
+    context-path: /cloud-user
 
 spring:
   application:
@@ -16,3 +18,13 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: ${eureka.node1},${eureka.node2}
+
+#feign配置
+feign:
+  hystrix:
+    enabled: false
+  client:
+    config:
+      default:
+        connect-timeout: 2000
+        read-timeout: 20000

@@ -20,7 +20,9 @@
     <modules>
         <module>eureka-server</module>
         <module>app</module>
-        <module>orm</module>
+        <module>service</module>
+        <module>common</module>
+        <module>expand</module>
     </modules>
 
     <properties>

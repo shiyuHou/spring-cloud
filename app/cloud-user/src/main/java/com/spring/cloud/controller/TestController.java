@@ -1,6 +1,8 @@
 package com.spring.cloud.controller;
 
 import com.spring.cloud.entity.User;
+import com.spring.cloud.openfeign.CloudUserFeignClient;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,6 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/test")
 public class TestController {
 
+    @Autowired
+    private CloudUserFeignClient cloudUserFeignClient;
 
     /**
      * 获取用户信息
@@ -22,7 +26,12 @@ public class TestController {
      **/
     @GetMapping("/getUserInfo")
     public String getUserInfo(){
-
         return new User().toString();
+    }
+
+    @GetMapping("/feign")
+    public String feign(){
+
+        return cloudUserFeignClient.getUserInfo();
     }
 }
