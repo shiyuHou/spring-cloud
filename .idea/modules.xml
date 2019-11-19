@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server-two/eureka-server-two.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server-two/eureka-server-two.iml" />
       <module fileurl="file://$PROJECT_DIR$/expand/expand.iml" filepath="$PROJECT_DIR$/expand/expand.iml" />
       <module fileurl="file://$PROJECT_DIR$/expand/openfeign/openfeign.iml" filepath="$PROJECT_DIR$/expand/openfeign/openfeign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/product/product.iml" filepath="$PROJECT_DIR$/app/product/product.iml" />
       <module fileurl="file://$PROJECT_DIR$/service/service.iml" filepath="$PROJECT_DIR$/service/service.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud.iml" filepath="$PROJECT_DIR$/spring-cloud.iml" />
     </modules>

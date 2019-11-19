@@ -2,6 +2,7 @@ package com.spring.cloud.entity;
 
 import lombok.Data;
 import lombok.ToString;
+import lombok.experimental.Accessors;
 
 /**
  * @Author houshiyu
@@ -10,6 +11,7 @@ import lombok.ToString;
  **/
 @Data
 @ToString
+@Accessors(chain = true)
 public class User {
 
     private Long id=1L;
