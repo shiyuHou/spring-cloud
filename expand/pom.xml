@@ -14,11 +14,13 @@
     <artifactId>expand</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>expand</name>
+    <packaging>pom</packaging>
     <description>expand project for Spring Boot</description>
 
     <modules>
         <module>openfeign</module>
         <module>hystrix-dashboard</module>
+        <module>hystrix-turbine</module>
     </modules>
 
     <build>
