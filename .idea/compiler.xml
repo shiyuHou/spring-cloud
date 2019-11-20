@@ -9,25 +9,27 @@
         <module name="cloud-user" />
         <module name="common" />
         <module name="eureka-server-one" />
-        <module name="service" />
-        <module name="product" />
         <module name="expand" />
-        <module name="eureka-server-two" />
         <module name="openfeign" />
+        <module name="hystrix-dashboard" />
+        <module name="eureka-server-two" />
+        <module name="cloud-product" />
+        <module name="service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="app" target="1.8" />
       <module name="cloud" target="1.8" />
+      <module name="cloud-product" target="1.8" />
       <module name="cloud-user" target="1.8" />
       <module name="common" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="eureka-server-one" target="1.8" />
       <module name="eureka-server-two" target="1.8" />
       <module name="expand" target="1.8" />
+      <module name="hystrix-dashboard" target="1.8" />
       <module name="openfeign" target="1.8" />
       <module name="orm" target="1.8" />
-      <module name="product" target="1.8" />
       <module name="service" target="1.8" />
       <module name="spring-cloud" target="1.8" />
     </bytecodeTargetLevel>
@@ -35,15 +37,16 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="cloud" options="-parameters" />
+      <module name="cloud-product" options="-parameters" />
       <module name="cloud-user" options="-parameters" />
       <module name="common" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="eureka-server-one" options="-parameters" />
       <module name="eureka-server-two" options="-parameters" />
       <module name="expand" options="-parameters" />
+      <module name="hystrix-dashboard" options="-parameters" />
       <module name="openfeign" options="-parameters" />
       <module name="orm" options="-parameters" />
-      <module name="product" options="-parameters" />
       <module name="service" options="-parameters" />
       <module name="spring-cloud" options="-parameters" />
     </option>

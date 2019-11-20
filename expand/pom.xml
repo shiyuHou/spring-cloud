@@ -18,7 +18,9 @@
 
     <modules>
         <module>openfeign</module>
+        <module>hystrix-dashboard</module>
     </modules>
+
     <build>
         <plugins>
             <plugin>

@@ -19,6 +19,7 @@
 
     <modules>
         <module>cloud-user</module>
+        <module>cloud-product</module>
     </modules>
 
     <properties>

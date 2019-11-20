@@ -10,10 +10,10 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableFeignClients         //开启远程调用
 @EnableDiscoveryClient      //开启服务注册
 @SpringBootApplication
-public class ProductApplication {
+public class CloudProductApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ProductApplication.class, args);
+        SpringApplication.run(CloudProductApplication.class, args);
     }
 
 }

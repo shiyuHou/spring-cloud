@@ -28,3 +28,14 @@ feign:
       default:
         connect-timeout: 2000
         read-timeout: 20000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+    info:
+      enabled: true
