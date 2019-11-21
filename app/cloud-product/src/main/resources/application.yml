@@ -29,7 +29,12 @@ feign:
         connect-timeout: 2000
         read-timeout: 20000
 
+#actuator监控配置
 management:
+  server:
+    port: 8888
+    ssl:
+      enabled: false
   endpoints:
     web:
       exposure:
@@ -39,3 +44,9 @@ management:
       show-details: always
     info:
       enabled: true
+  security:
+    enabled: true
+security:
+  user:
+    name: admin
+    password: 123456
