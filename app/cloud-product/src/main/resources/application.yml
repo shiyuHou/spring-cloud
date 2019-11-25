@@ -18,6 +18,15 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: ${eureka.node1},${eureka.node2}
+  #服务过期时间配置,超过这个时间没有接收到心跳EurekaServer就会将这个实例剔除
+  #注意，EurekaServer一定要设置eureka.server.eviction-interval-timer-in-ms否则这个配置无效，这个配置一般为服务刷新时间配置的三倍,默认90s
+#  eureka.instance.lease-expiration-duration-in-seconds=15
+  #服务刷新时间配置，每隔这个时间会主动心跳一次,默认30s
+#  eureka.instance.lease-renewal-interval-in-seconds=5
+  #eureka client刷新本地缓存时间.默认30s
+#  eureka.client.registryFetchIntervalSeconds=5
+  #eureka客户端ribbon刷新时间,默认30s
+#  ribbon.ServerListRefreshInterval=5000
 
 #feign配置
 feign:
@@ -32,7 +41,7 @@ feign:
 #actuator监控配置
 management:
   server:
-    port: 8888
+#    port: 8888
     ssl:
       enabled: false
   endpoints:
@@ -50,3 +59,14 @@ security:
   user:
     name: admin
     password: 123456
+
+# ribbon配置（其他参数见com.netflix.client.config.CommonClientConfigKey）
+ribbon:
+  ConnectTimeout: 2000
+  ReadTimeout: 10000
+cloud-user:
+  ribbon:
+    # 配置eureka服务地址
+    listOfServers: http://localhost:9091,http://localhost:9092
+    # 更改轮询策略
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
