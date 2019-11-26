@@ -4,16 +4,15 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
-@EnableCircuitBreaker       //开启服务容错
-@EnableFeignClients         //开启远程调用+客户端负载
-@EnableDiscoveryClient      //开启服务注册
+@EnableDiscoveryClient
+@EnableZuulProxy
 @SpringBootApplication
-public class CloudProductApplication {
+public class GatewayZuulApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CloudProductApplication.class, args);
+        SpringApplication.run(GatewayZuulApplication.class, args);
     }
 
 }

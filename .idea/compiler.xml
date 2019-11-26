@@ -6,15 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="hystrix-turbine" />
         <module name="cloud-user" />
         <module name="common" />
         <module name="eureka-server-one" />
-        <module name="hystrix-turbine" />
-        <module name="openfeign" />
+        <module name="service" />
         <module name="hystrix-dashboard" />
         <module name="eureka-server-two" />
         <module name="cloud-product" />
-        <module name="service" />
+        <module name="openfeign" />
+        <module name="gateway-zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -27,6 +28,7 @@
       <module name="eureka-server-one" target="1.8" />
       <module name="eureka-server-two" target="1.8" />
       <module name="expand" target="1.8" />
+      <module name="gateway-zuul" target="1.8" />
       <module name="hystrix-dashboard" target="1.8" />
       <module name="hystrix-turbine" target="1.8" />
       <module name="openfeign" target="1.8" />
@@ -45,6 +47,7 @@
       <module name="eureka-server-one" options="-parameters" />
       <module name="eureka-server-two" options="-parameters" />
       <module name="expand" options="-parameters" />
+      <module name="gateway-zuul" options="-parameters" />
       <module name="hystrix-dashboard" options="-parameters" />
       <module name="hystrix-turbine" options="-parameters" />
       <module name="openfeign" options="-parameters" />

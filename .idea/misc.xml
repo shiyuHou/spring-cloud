@@ -16,6 +16,7 @@
         <option value="$PROJECT_DIR$/app/product/pom.xml" />
         <option value="$PROJECT_DIR$/expand/hystrix-dashboard/pom.xml" />
         <option value="$PROJECT_DIR$/expand/hystrix-turbine/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway-zuul/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

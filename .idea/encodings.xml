@@ -13,6 +13,7 @@
     <file url="file://$PROJECT_DIR$/expand/hystrix-dashboard" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/expand/hystrix-turbine" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/expand/openfeign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway-zuul" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service" charset="UTF-8" />
   </component>
 </project>
