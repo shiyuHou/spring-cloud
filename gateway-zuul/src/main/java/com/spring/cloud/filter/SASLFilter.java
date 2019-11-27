@@ -4,18 +4,21 @@ import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
 import org.apache.commons.lang.StringUtils;
+import org.springframework.cloud.netflix.zuul.filters.support.FilterConstants;
+import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
 
 /**
  * @Author houshiyu
  * @Date 2019/11/26 下午12:04
- * @Description
+ * @Description 简单身份认证安全层过滤器
  **/
-public class TokenFilter extends ZuulFilter {
+@Component
+public class SASLFilter extends ZuulFilter {
     @Override
     public String filterType() {
-        return "pre";
+        return FilterConstants.PRE_TYPE;
     }
 
     @Override
